@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1AD5E336-06FA-43BB-B1F3-DEBEFCA14A3D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Estructura_de_datos_CSharp_Consola</RootNamespace>
+    <AssemblyName>Estructura de datos C# consola</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\Estructuras de Datos\Arbol\BinaryTree.cs" />
+    <Compile Include="Clases\Estructuras de Datos\Colas\CircularQueue.cs" />
+    <Compile Include="Clases\Estructuras de Datos\Colas\PriorityQueue.cs" />
+    <Compile Include="Clases\Estructuras de Datos\Colas\Queue.cs" />
+    <Compile Include="Clases\Estructuras de Datos\Grafos\DirectedGraph.cs" />
+    <Compile Include="Clases\Estructuras de Datos\Grafos\UndirectedGraph.cs" />
+    <Compile Include="Clases\Información\Information.cs" />
+    <Compile Include="Clases\Menus\MenuList.cs" />
+    <Compile Include="Clases\Menus\MenuGraph.cs" />
+    <Compile Include="Clases\Menus\MenuQueue.cs" />
+    <Compile Include="Clases\Menus\MenuTree.cs" />
+    <Compile Include="Clases\Menus\MenuStack.cs" />
+    <Compile Include="Clases\Menus\MenuStructures.cs" />
+    <Compile Include="Clases\Estructuras de Datos\Listas\CircularDoublyLinkedList.cs" />
+    <Compile Include="Clases\Estructuras de Datos\Listas\CircularList.cs" />
+    <Compile Include="Clases\Estructuras de Datos\Listas\DoublyListLinked.cs" />
+    <Compile Include="Clases\Menus\SubMenu Listas\ShowSubMenuDLL.cs" />
+    <Compile Include="Clases\Menus\SubMenu Listas\ShowSubMenuCL.cs" />
+    <Compile Include="Clases\Menus\SubMenu Listas\ShowSubMenuCDLL.cs" />
+    <Compile Include="Clases\Menus\SubMenu Listas\ShowSubMenuSL.cs" />
+    <Compile Include="Clases\Menus\SubMenu Pilas\SubMenuStackD.cs" />
+    <Compile Include="Clases\Menus\SubMenu Pilas\SubMenuStackS.cs" />
+    <Compile Include="Clases\Estructuras de Datos\Nodos\DoubleNode.cs" />
+    <Compile Include="Clases\Estructuras de Datos\Nodos\Node.cs" />
+    <Compile Include="Clases\Estructuras de Datos\Listas\SimpleList.cs" />
+    <Compile Include="Clases\Estructuras de Datos\Pilas\StackDinamic.cs" />
+    <Compile Include="Clases\Estructuras de Datos\Pilas\StackStatic.cs" />
+    <Compile Include="Clases\Menus\SubMenuColas\SubMenuCircularQueue .cs" />
+    <Compile Include="Clases\Menus\SubMenuColas\SubMenuPriorityQueue .cs" />
+    <Compile Include="Clases\Menus\SubMenuColas\SubMenuQueue.cs" />
+    <Compile Include="Clases\Menus\SubMenuGrafos\SubMenuUndirectedGraph.cs" />
+    <Compile Include="Clases\Menus\SubMenuGrafos\SubMenuDirectedGraph.cs" />
+    <Compile Include="Interfaces\ImethodLists.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
