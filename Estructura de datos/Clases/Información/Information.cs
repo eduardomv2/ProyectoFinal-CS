@@ -1,4 +1,6 @@
-﻿namespace Estructura_de_datos
+﻿using Estructura_de_datos_CSharp_Consola.Clases.Algoritmos;
+
+namespace Estructura_de_datos
 {
     public enum EnumDataStructures
     {
@@ -8,6 +10,28 @@
         List,
         Tree,
         Graph,
+        Algorithm,
+        Exit
+    }
+
+    public enum EnumAlgorithm
+    {
+        None,
+        Bubblesort,
+        Cocktailsort,
+        Insertionsort,
+        Bucketsort,
+        Countingsort,
+        Mergesort,
+        Binarytreesort,
+        Pigeonhole,
+        Radixsort,
+        Gnomesort,
+        Shellsort,
+        Combsort,
+        Selectionsort,
+        Heapsort,
+        Quicksort,
         Exit
     }
 
@@ -112,7 +136,28 @@
             "[3]List",
             "[4]Tree",
             "[5]Graph",
-            "[6]Exit"
+            "[6]Algorithm",
+            "[7]Exit"
+        };
+
+        public string[] TypeAlgorithm =
+        {
+            "[1]Bubblesort",
+            "[2]Cocktailsort",
+            "[3]Insertionsort",
+            "[4]Bucketsort",
+            "[5]Countingsort",
+            "[6]Mergesort",
+            "[7]Binarytreesort",
+            "[8]Pigeonhole",
+            "[9]Radixsort",
+            "[10]Gnomesort",
+            "[11]Shellsort",
+            "[12]Combsort",
+            "[13]Selectionsort",
+            "[14]Heapsort",
+            "[15]Quicksort", 
+            "[16]Exit"
         };
 
         #region Types

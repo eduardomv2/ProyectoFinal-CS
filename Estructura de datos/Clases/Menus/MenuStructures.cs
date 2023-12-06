@@ -13,6 +13,7 @@ namespace Estructura_de_datos.Clases.Extras
         public static MenuList _ShowMenuList = new MenuList();
         public static MenuTree _ShowMenuTree = new MenuTree();
         public static MenuGraph _ShowMenuGraph = new MenuGraph();
+        public static MenuAlgorithm _ShowMenuAlgorithm = new MenuAlgorithm();
 
         public string[] _TypeDataStructures = _Information.TypeDataStructures;
 
@@ -43,29 +44,28 @@ namespace Estructura_de_datos.Clases.Extras
             switch (DataType)
             {
                 case EnumDataStructures.Stack:
-                    Console.WriteLine("\"Stack's\"");
                     _ShowMenuStack.CycleStack(Numer);
                     Name = "None";
                     break;
 
                 case EnumDataStructures.Queues:
-                    Console.WriteLine("\"Queue's\"");
                     _ShowMenuQueue.CycleQueue(Numer);
                     break;
 
                 case EnumDataStructures.List:
-                    Console.WriteLine("\"List's\"");
                     _ShowMenuList.CycleList(Numer);
                     break;
 
                 case EnumDataStructures.Tree:
-                    Console.WriteLine("\"Tree's\"");
                     _ShowMenuTree.CycleTree(Numer);
                     break;
 
                 case EnumDataStructures.Graph:
-                    Console.WriteLine("\"Graph's\"");
                     _ShowMenuGraph.CycleGraph(Numer);
+                    break;
+
+                case EnumDataStructures.Algorithm:
+                    _ShowMenuAlgorithm.CycleAlgorithm(Numer);
                     break;
 
                 case EnumDataStructures.Exit:

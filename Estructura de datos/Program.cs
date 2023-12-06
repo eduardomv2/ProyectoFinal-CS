@@ -15,7 +15,7 @@ namespace Estructura_de_datos
                 Menu.PrintArray(Menu._TypeDataStructures, Menu.Name);
                 Console.Write("Select one option: ");
                 Option = Menu.Option(Option);
-            } while (Option != 6);
+            } while (Option != 7);
         }
     }
 }
