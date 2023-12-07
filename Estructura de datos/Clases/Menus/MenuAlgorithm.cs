@@ -1,7 +1,7 @@
 ﻿using Estructura_de_datos.Clases.Extras;
 using Estructura_de_datos_CSharp_Consola.Clases.Algoritmos;
 using System;
-using System.Runtime.InteropServices;
+using System.Collections.Generic;
 
 namespace Estructura_de_datos.Clases.Menus
 {
@@ -15,7 +15,7 @@ namespace Estructura_de_datos.Clases.Menus
         public static BubbleSort _Bubblesort = new BubbleSort();
         public static Cocktailsort _Cocktailsor = new Cocktailsort();
         public static Insertionsort _Insertionsort = new Insertionsort();
-        public static BubbleSort _Bucketsort = new BubbleSort();
+        public static BucketSort _Bucketsort = new BucketSort();
         public static Countingsort _Countingsort = new Countingsort();
         public static Mergesort _Mergesort = new Mergesort();
         public static Binarytreesort _Binarytreesort = new Binarytreesort();
@@ -91,10 +91,10 @@ namespace Estructura_de_datos.Clases.Menus
                     break;
                 case EnumAlgorithm.Bucketsort:
                     Name = "Bucketsort";
-                    int[] d = Multipurpose();
+                    double[] d = GenerarVectorDouble();
                     Console.WriteLine("Original: ");
                     Print(d);
-                    _Bubblesort.bubbleSort(d);
+                    _Bucketsort.bucketSort(d);
                     Console.WriteLine("Bucketsort: ");
                     Print(d);
                     Console.ReadKey();
@@ -232,7 +232,35 @@ namespace Estructura_de_datos.Clases.Menus
             return array;
         }
 
-        private void Print(int[] collection)
+        public double[] GenerarVectorDouble()
+        {
+            var Minon = 0;
+            var Lenght = 0;
+            var values = 5;
+
+            Console.Clear();
+            Console.Write("Insert one data: ");
+            Lenght = int.Parse(Console.ReadLine());
+            Console.Clear();
+            Console.WriteLine("\t@Israel I22050327 Algorithm: " + Name + "\n");
+            List<double> _List = new List<double>();
+
+            for (int i = Minon; i < Lenght; i++)
+            {
+                if (i < values)
+                {
+                    double NewValor = _Random.NextDouble();
+                    _List.Add(NewValor);
+                }
+                else
+                {
+                    break;
+                }
+            }
+            return _List.ToArray();
+        }
+
+        private void Print(Array collection)
         {
             Console.Write("[");
             foreach (var item in collection)
