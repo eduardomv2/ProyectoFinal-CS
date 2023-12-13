@@ -11,7 +11,7 @@
             // Aplicar Radix Sort para cada posición del dígito
             for (int exp = 1; max / exp > 0; exp *= 10)
             {
-                CountingSort(arr, exp);
+                CountingSort(arr, exp); 
             }
         }
 

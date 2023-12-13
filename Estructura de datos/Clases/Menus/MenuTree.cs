@@ -48,7 +48,7 @@ namespace Estructura_de_datos.Clases.Menus
                     _Items.Add(Data);
                     break;
 
-                case EnumOperationsTree.Delete:
+                case EnumOperationsTree.Delete: 
                     Console.Write("Delete one data: ");
                     try { Data = int.Parse(Console.ReadLine()); } catch { }
                     _Items.Delete(Data);

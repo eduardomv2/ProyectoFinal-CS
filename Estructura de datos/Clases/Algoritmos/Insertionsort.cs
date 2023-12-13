@@ -2,7 +2,7 @@
 
 namespace Estructura_de_datos_CSharp_Consola.Clases.Algoritmos
 {
-    public class Insertionsort
+    public class Insertionsort 
     {
         public Insertionsort() { }
 

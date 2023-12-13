@@ -10,7 +10,7 @@ namespace Estructura_de_datos_CSharp_Consola.Clases.Algoritmos
         public BucketSort() { }
 
         public void bucketSort(double[] array)
-        {
+        { 
             // Crear buckets vacíos
             List<double>[] buckets = new List<double>[array.Length];
             for (int i = 0; i < buckets.Length; i++)

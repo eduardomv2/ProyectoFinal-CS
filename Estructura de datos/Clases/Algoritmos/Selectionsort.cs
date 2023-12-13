@@ -12,7 +12,7 @@
             {
                 // Encontrar el índice del mínimo elemento en el subarreglo no ordenado
                 int minIndex = i;
-                for (int j = i + 1; j < n; j++)
+                for (int j = i + 1; j < n; j++) 
                 {
                     if (arr[j] < arr[minIndex])
                     {

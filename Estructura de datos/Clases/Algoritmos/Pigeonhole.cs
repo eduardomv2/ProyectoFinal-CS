@@ -13,7 +13,7 @@ namespace Estructura_de_datos_CSharp_Consola.Clases.Algoritmos
             int range, i, j, index;
 
             for (int a = 1; a < arr.Length; a++)
-            {
+            { 
                 if (arr[a] > max)
                     max = arr[a];
                 if (arr[a] < min)

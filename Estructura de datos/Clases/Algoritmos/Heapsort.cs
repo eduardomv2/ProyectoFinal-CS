@@ -11,7 +11,7 @@
             // Construir un heap (montículo) máximo
             for (int i = n / 2 - 1; i >= 0; i--)
             {
-                Heapify(arr, n, i);
+                Heapify(arr, n, i); 
             }
 
             // Extraer elementos uno por uno del heap

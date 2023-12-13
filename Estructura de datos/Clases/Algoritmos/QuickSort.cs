@@ -14,7 +14,7 @@ namespace Estructura_de_datos_CSharp_Consola.Clases.Algoritmos
         private void Swap(ref int IndexOnew, ref int IndexTwo)
         {
             int Temporary = IndexOnew;
-            IndexOnew = IndexTwo;
+            IndexOnew = IndexTwo; 
             IndexTwo = Temporary;
         }
 

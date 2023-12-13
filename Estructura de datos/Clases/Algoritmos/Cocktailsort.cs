@@ -7,7 +7,7 @@
         public void Sort(int[] arr)
         {
             bool swapped;
-            int start = 0;
+            int start = 0; 
             int end = arr.Length;
 
             do

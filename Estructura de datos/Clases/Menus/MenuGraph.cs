@@ -21,7 +21,7 @@ namespace Estructura_de_datos.Clases.Menus
             do
             {
                 Operation = 0;
-                _ShowMenuStructures.PrintArray(_TypeGraph, Name);
+                _ShowMenuStructures.PrintArray(_TypeGraph, Name); 
                 Console.Write("Select one option: ");
                 Operation = Option(Operation);
             } while (Operation != _TypeGraph.Length);

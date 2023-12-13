@@ -9,7 +9,7 @@
             int n = arr.Length;
 
             // Encontrar el rango del arreglo
-            int max = FindMax(arr);
+            int max = FindMax(arr); 
 
             // Crear un arreglo de conteo y un arreglo resultado
             int[] count = new int[max + 1];

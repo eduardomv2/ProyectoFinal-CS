@@ -222,7 +222,7 @@ namespace Estructura_de_datos.Clases.Menus
             Console.Write("Insert one data: ");
             x = int.Parse(Console.ReadLine());
             Console.Clear();
-            Console.WriteLine("\t@Israel I22050327 Algorithm: " + Name + "\n");
+            Console.WriteLine("\t@Eduardo Villalobos I22050349 Algorithm: " + Name + "\n");
             int[] array = new int[x];
 
             for (int i = 0; i < array.Length; i++)
@@ -242,7 +242,7 @@ namespace Estructura_de_datos.Clases.Menus
             Console.Write("Insert one data: ");
             Lenght = int.Parse(Console.ReadLine());
             Console.Clear();
-            Console.WriteLine("\t@Israel I22050327 Algorithm: " + Name + "\n");
+            Console.WriteLine("\t@Eduardo Villalobos I22050349 Algorithm: " + Name + "\n");
             List<double> _List = new List<double>();
 
             for (int i = Minon; i < Lenght; i++)

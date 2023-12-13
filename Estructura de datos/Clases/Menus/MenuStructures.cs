@@ -22,7 +22,7 @@ namespace Estructura_de_datos.Clases.Extras
         public void PrintArray(Array array, string Name)
         {
             Console.Clear();
-            Console.WriteLine("\t@Israel I22050327 Data Structures: " + Name);
+            Console.WriteLine("\t@Eduardo Villalobos I22050349 Algorithm: " + Name);
             foreach (var item in array)
             {
                 Console.WriteLine(item.ToString());
@@ -69,7 +69,7 @@ namespace Estructura_de_datos.Clases.Extras
                     break;
 
                 case EnumDataStructures.Exit:
-                    Console.WriteLine("Good Bay :)");
+                    Console.WriteLine("Bye");
                     Console.ReadKey();
                     break;
             }

@@ -11,7 +11,7 @@
             // Inicializar el tamaño del salto
             int gap = n;
 
-            // Factor de reducción
+            // Factor de reducción 
             double shrink = 1.3;
 
             bool swapped;

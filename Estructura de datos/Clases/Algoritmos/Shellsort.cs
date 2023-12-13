@@ -36,7 +36,7 @@ namespace Estructura_de_datos_CSharp_Consola.Clases.Algoritmos
                         array[j] = array[j - gap];
                         j -= gap;
 
-                        PrintArray(array);
+                        PrintArray(array); 
                     }
 
                     // Colocar el valor temporal en la posición correcta en el subarray

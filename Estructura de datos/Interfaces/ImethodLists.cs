@@ -6,9 +6,9 @@
         void Delete(T data);
         void Search(T data);
         bool Exist(T data);
-        void ShowRevers();
+        void ShowRevers(); 
         void Show();
         bool IsEmpty();
         void Clear();
     }
-}
+} 

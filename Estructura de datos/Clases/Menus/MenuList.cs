@@ -15,7 +15,7 @@ namespace Estructura_de_datos
         public static SubMenu_CDLL _ShowSubMenu_CDLL = new SubMenu_CDLL();
 
         public string[] _TypeList = _Information.TypeList;
-        public static string[] _OptionList = _Information.List;
+        public static string[] _OptionList = _Information.List; 
 
         public MenuList() { }
 

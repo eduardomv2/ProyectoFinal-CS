@@ -10,7 +10,7 @@ namespace Estructura_de_datos_CSharp_Consola.Clases.Algoritmos
         {
             if (arr.Length < 2)
                 return;
-
+             
             int mid = arr.Length / 2;
             int[] left = new int[mid];
             int[] right = new int[arr.Length - mid];

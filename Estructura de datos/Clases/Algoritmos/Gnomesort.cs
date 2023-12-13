@@ -10,7 +10,7 @@
             int index = 0;
 
             while (index < n)
-            {
+            { 
                 if (index == 0)
                 {
                     index++;
